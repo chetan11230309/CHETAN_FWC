@@ -1,0 +1,137 @@
+
+\documentclass[a4paper,12pt]{article}
+\usepackage{amsmath}
+\usepackage{fullpage}
+\usepackage{enumitem}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\pagestyle{fancy}{}
+\fancyhf{} % clear all fields
+
+% Header: image left, text center, chapter right
+\fancyhead[L]{\includegraphics[height=1cm]{IIIT.png}} % Replace logo.png with your image file
+\fancyhead[C]{\textbf{Assignment 3}}
+\fancyhead[R]{\textit{Name:SIVA CHETAN BALA \\ ID NO: fwc comet023}}
+
+% Footer: page number in center
+\fancyfoot[C]{\thepage}
+
+% Optional: horizontal line under header and above footer
+\renewcommand{\headrulewidth}{0.4pt}
+
+
+
+\begin{document}
+\thispagestyle{fancy}
+\vspace*{2em}
+\noindent\textbf{\textcolor{cyan}{Example 2:}}
+Which of the following list of numbers form an AP? If they form an AP, write the next two terms : \\
+(i) 4, 10, 16, 22, \ldots \hspace{1em}
+(ii) 1, –1, –3, –5, \ldots \\
+(iii) 2, –2, 2, –2, 2, –2, \ldots \hspace{1em}
+(iv) 1, 1, 1, 2, 2, 2, 3, 3, 3, \ldots
+
+\noindent\textbf{\textcolor{cyan}{Solution:}} 
+(i) We have 
+\hspace{0.5cm}\(
+a_2 - a_1 = 10 - 4 = 6
+\)
+\[
+a_3 - a_2 = 16 - 10 = 6
+\]
+\[
+a_4 - a_3 = 22 - 16 = 6
+\]\\
+i.e., \(a_{k+1} - a_k\) is the same every time. \\
+So, the given list of numbers forms an  AP with the common difference d = 6.\\
+The next two terms are: 22 + 6 = 28  and  28 + 6 = 34.
+
+(ii)
+\[
+a_2 - a_1 = -1 - 1 = -2
+\]
+\[
+a_3 - a_2 = -3 - (-1) = -3 + 1 = -2
+\]
+\[
+a_4 - a_3 = -5 - (-3) = -5 + 3 = -2
+\]
+i.e., \(a_{k+1} - a_k\) is the same every time. \\
+So,the given list of numbers forms  an AP with the common difference d = -2. \\
+The next two terms are: \\
+\[
+-5 + (-2) = -7 \quad \text{and} \quad -7 + (-2) = -9
+\]
+
+(iii)
+\[
+a_2 - a_1 = -2 - (2) = -2 - 2 = -4
+\]
+\[
+a_3 - a_2 = 2 - (-2) = 2 + 2 = 4
+\]
+As \(a_2 - a_1 \ne a_3 - a_2\), the given list of numbers does not form an AP.
+
+(iv)
+\[
+a_2 - a_1 = 1 - 1 = 0
+\]
+\[
+a_3 - a_2 = 1 - 1 = 0
+\]
+\[
+a_4 - a_3 = 2 - 1 = 1
+\]
+Here,\( a_2 - a_1 = a_3 - a_2 \ne a_4 - a_3\). \\
+So, the given list of numbers does not form an AP.
+
+\pagestyle{empty}
+\vspace{5em}
+\noindent\textbf{\textcolor{cyan}{Example 3:}}
+Find the 10th term of the AP : 2, 7, 12, \ldots \\
+\noindent\textbf{\textcolor{cyan}{Solution:}} 
+Here, \(a = 2\), \quad d = 7 - 2 = 5 \quad \text{and} \quad\( n = 10\). \\
+\vspace{2em}
+We have 
+\hspace{2cm}\(
+          a_n = a + (n - 1)d
+\) \\
+So,
+\hspace{3cm}\(
+a_{10} = 2 + (10 - 1) \cdot 5 = 2 + 45 = 47
+\) \\
+Therefore, the 10th term of the given AP is 47.
+
+\vspace{0.5em}
+\noindent\textbf{\textcolor{cyan}{Example 4:}}
+Which term of the AP: 21, 18, 15, \ldots is –81? Also, is any term 0? Give  reason for your answer. \\
+\noindent\textbf{\textcolor{cyan}{Solution:}}\\  
+Here, \(a = 21, \quad d = 18 - 21 = -3, \quad \text{and} \quad a_n = -81\), and we have to find \(n\).
+
+\noindent\textbf{As:}\hspace{5.3cm} \(a_n = a + (n - 1)d\)
+
+\noindent\textbf{We have:}
+\begin{align*}
+-81 &= 21 + (n - 1)(-3) \\
+-81 &= 21 - 3(n - 1) \\
+-81 &= 24 - 3n \\
+-105 &= -3n \\
+\Rightarrow n &= 35
+\end{align*}
+
+\noindent\textbf{Therefore,} the 35th term of the given AP is –81.
+
+\noindent\textbf{Next,} we want to know if there is any \(n\) for which \(a_n = 0\). If such an \(n\) is there, then:
+\begin{align*}
+21 + (n - 1)(-3) &= 0 \\
+3(n - 1) &= 21 \\
+n &= 8
+\end{align*}
+
+\noindent\textbf{So,} the eighth term is 0.
+
+\end{document}
