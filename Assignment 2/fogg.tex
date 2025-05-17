@@ -1,0 +1,65 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr} % For headers and footers
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+
+% Header setup
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\includegraphics[width=0.2\textwidth]{iiit.png}}
+\fancyhead[C]{Assignment 2}
+\fancyhead[R]{Name:SIVA CHETAN BALA \\ID NO:
+fwc comet023}
+\fancyfoot[C]{IIIT Bangalore}
+
+\begin{document}
+
+\noindent\textbf{Q.36} 
+{If \( X = 1 \) in the logic equation\[\left[ X + Z \left\{ \overline{Y} + \left( \overline{Z} + X \overline{Y} \right) \right\} \right]
+\left\{ \overline{X} + \overline{Z}(X + Y) \right\} = 1,
+\]then}
+
+\vspace{0.5em}
+
+\noindent
+\begin{tabular}{llll}
+(A) \( Y = Z \) & (B) \( Y = \overline{Z} \) & (C) \( Z = 1 \) & (D) \( Z = 0 \)
+\end{tabular}
+
+\vspace{1em}
+\noindent\textbf{Solution:}
+
+Given:
+\[
+\left[X + Z\{Y + (Z + XY)\}\right]\left\{\overline{X} + \overline{Z}(X + Y)\right\} = 1
+\]
+
+Substitute \( X = 1 \):
+
+\begin{align*}
+&\left[1 + Z\{Y + (Z + 1 \cdot Y)\}\right]\left\{\overline{1} + \overline{Z}(1 + Y)\right\} = 1 \\
+&\left[1 + Z\{Y + Z + Y\}\right]\left\{0 + \overline{Z}(1 + Y)\right\} = 1 \\
+&\left[1 + Z(2Y + Z)\right]\left[\overline{Z}(1 + Y)\right] = 1
+\end{align*}
+
+For the product to be 1, both factors must be non-zero.
+
+\noindent The second factor is \(\overline{Z}(1 + Y)\). For this to be non-zero:
+\[
+\overline{Z} = 1 \Rightarrow Z = 0
+\]
+
+Now substitute \( Z = 0 \) into the full expression:
+
+\begin{align*}
+&\left[1 + 0\cdot(2Y + 0)\right](1 \cdot (1 + Y)) = 1 \\
+&[1](1 + Y) = 1
+\end{align*}
+
+\noindent Since \( (1 + Y) \geq 1 \), the expression equals 1 regardless of \( Y \)'s value.
+
+\noindent\textbf{Therefore, the correct answer is (D) } \( Z = 0 \).
+
+\end{document}
